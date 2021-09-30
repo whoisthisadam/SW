@@ -85,3 +85,25 @@ int main()
 	else cout << "Параллелепипед не пройдет в отверстие" << endl;
 	return 0;
 }
+#include<iostream>
+#include<cstdlib>
+using namespace std;
+int main()
+{
+	srand(time(0));
+	int n1 = rand() % 10;
+	int n2 = rand() % 10;
+	int n3 = rand() % 10;
+	int n4 = rand() % 10;
+	cout << "Password created\nPress ENTER to crack the password" <<endl;
+	getchar();
+	for (int pass1 = 0; pass1 <= n1; pass1++)
+		for (int pass2 = 0; pass2 <= n2; pass2++)
+			for (int pass3 = 0; pass3 <= n3; pass3++)
+				for (int pass4 = 0; pass4 <= n4; pass4++)
+					if (pass1 == n1 & pass2 == n2 & pass3 == n3 & pass4 == n4) {
+						cout << "Password is: " << pass1 << pass2 << pass3 << pass4 << endl;
+					}
+	return 0;
+}
+
