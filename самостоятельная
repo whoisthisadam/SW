@@ -46,3 +46,24 @@ int main()
 		}
 return 0;
 }
+#include<iostream>
+#include<clocale>
+#include<string>
+using namespace std;
+int main()
+{
+	setlocale(LC_ALL, "rus");
+	while (1)
+	{
+		string n;
+		int k;
+		cout << "n="; cin >> n;
+		cout << "k="; cin >> k;
+		if (k <= n.size()) {
+			n = n.substr(0, k);
+			cout << " " << n << endl; break;
+		}
+		else cout << "ОШИБКА!!!(Количество цифр числа n должно быть не меньше k)" << endl;
+	}
+	return 0;
+}
