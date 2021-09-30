@@ -60,5 +60,22 @@ int Task3()
             cout << " " << n << endl; break;
         }
         else cout << "ОШИБКА!!!(Количество цифр числа n должно быть не меньше k)" << endl;
+        }
     return 0;
 }
+ int Task4()
+    {
+        Task3;
+        setlocale(LC_ALL, "rus");
+        int dlinaPar, shirinaPar, visotaPar, dlinaOtv, shirinaOtv;
+        cout << "Введите размеры параллелепипеда" << endl;
+        cout << "Длина:"; cin >> dlinaPar;
+        cout << "Ширина:"; cin >> shirinaPar;
+        cout << "Высота:"; cin >> visotaPar;
+        cout << "Введите размеры отверстия\nШирина:" << endl; cin >> dlinaOtv;
+        cout << "Высота:"; cin >> shirinaOtv;
+        if (dlinaOtv > dlinaPar & dlinaOtv > shirinaPar & shirinaOtv > dlinaPar & shirinaOtv > shirinaPar || dlinaOtv > dlinaPar & dlinaOtv > visotaPar & shirinaOtv > dlinaPar & shirinaOtv > visotaPar || dlinaOtv > visotaPar & dlinaOtv > shirinaPar & shirinaOtv > visotaPar & shirinaOtv > shirinaPar)
+            cout << "Параллелепипед пройдет в отверстие" << endl;
+        else cout << "Параллелепипед не пройдет в отверстие" << endl;
+        return 0;
+    }
