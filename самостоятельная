@@ -1,10 +1,7 @@
 #include <iostream>
 #include<locale>
-#include<cmath>
-#include<string>
-#include<cstdlib>
 using namespace std;
-int Task1()
+int main()
 {
     setlocale(LC_ALL, "rus");
     int n;
@@ -27,75 +24,4 @@ int Task1()
         }
     }
     return 0;
-}
-int Task2()
-{
-    Task1();
-    setlocale(LC_ALL, "russian");
-    int weeknumber;
-    cout << "Введите номер дня недели:"; cin >> weeknumber;
-    switch (weeknumber) {
-    case 1: cout << "Понедельник" << endl; break;
-    case 2: cout << "Вторник" << endl; break;
-    case 3: cout << "Среда" << endl; break;
-    case 4: cout << "Четверг" << endl; break;
-    case 5: cout << "Пятница" << endl; break;
-    case 6: cout << "Суббота" << endl; break;
-    case 7: cout << "Воскресенье" << endl; break;
-    default: cout << "ОШИБКА ВВОДА(ТРЕБУЕТСЯ ЧИСЛО ОТ 1 ДО 7)" << endl;
-    }
-    return 0;
-}
-int Task3()
-{
-    Task2();
-    setlocale(LC_ALL, "rus");
-    while (1)
-    {
-        string n;
-        int k;
-        cout << "n="; cin >> n;
-        cout << "k="; cin >> k;
-        if (k <= n.size()) {
-            n = n.substr(0, k);
-            cout << " " << n << endl; break;
-        }
-        else cout << "ОШИБКА!!!(Количество цифр числа n должно быть не меньше k)" << endl;
-        }
-    return 0;
-}
- int Task4()
-    {
-        Task3;
-        setlocale(LC_ALL, "rus");
-        int dlinaPar, shirinaPar, visotaPar, dlinaOtv, shirinaOtv;
-        cout << "Введите размеры параллелепипеда" << endl;
-        cout << "Длина:"; cin >> dlinaPar;
-        cout << "Ширина:"; cin >> shirinaPar;
-        cout << "Высота:"; cin >> visotaPar;
-        cout << "Введите размеры отверстия\nШирина:" << endl; cin >> dlinaOtv;
-        cout << "Высота:"; cin >> shirinaOtv;
-        if (dlinaOtv > dlinaPar & dlinaOtv > shirinaPar & shirinaOtv > dlinaPar & shirinaOtv > shirinaPar || dlinaOtv > dlinaPar & dlinaOtv > visotaPar & shirinaOtv > dlinaPar & shirinaOtv > visotaPar || dlinaOtv > visotaPar & dlinaOtv > shirinaPar & shirinaOtv > visotaPar & shirinaOtv > shirinaPar)
-            cout << "Параллелепипед пройдет в отверстие" << endl;
-        else cout << "Параллелепипед не пройдет в отверстие" << endl;
-        return 0;
-    }
-    int main()
-{
-	Task4();
-	srand(time(0));
-	int n1 = rand() % 10;
-	int n2 = rand() % 10;
-	int n3 = rand() % 10;
-	int n4 = rand() % 10;
-	cout << "Password created\nPress ENTER to crack the password" <<endl;
-	getchar();
-	for (int pass1 = 0; pass1 <= n1; pass1++)
-		for (int pass2 = 0; pass2 <= n2; pass2++)
-			for (int pass3 = 0; pass3 <= n3; pass3++)
-				for (int pass4 = 0; pass4 <= n4; pass4++)
-					if (pass1 == n1 & pass2 == n2 & pass3 == n3 & pass4 == n4) {
-						cout << "Password is: " << pass1 << pass2 << pass3 << pass4 << endl;
-					}
-	return 0;
 }
