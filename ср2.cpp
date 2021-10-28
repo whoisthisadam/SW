@@ -1,6 +1,5 @@
 #include<iostream>
 #include<time.h>
-#include<cstdlib>
 #include<cmath>
 #include<conio.h>
 using namespace std;
