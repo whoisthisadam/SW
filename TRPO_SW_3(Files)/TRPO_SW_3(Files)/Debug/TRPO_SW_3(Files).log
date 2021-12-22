@@ -1,0 +1,3 @@
+﻿  trpo sw 3.cpp
+C:\Users\Адам\Бгуир\трпо\TRPO_SW_3(Files)\TRPO_SW_3(Files)\trpo sw 3.cpp(39,25): warning C4244: =: преобразование "std::streamoff" в "int", возможна потеря данных
+  TRPO_SW_3(Files).vcxproj -> C:\Users\Адам\Бгуир\трпо\TRPO_SW_3(Files)\Debug\TRPO_SW_3(Files).exe
